@@ -13,11 +13,17 @@ namespace Lab2
             List<double> shapeHit = new List<double>();
             List<double> shapeMiss = new List<double>();
             List<double> pointScore = new List<double>();
+            //Shape circle = new Circle();
+            
+            
+          
+            Square square = new Square();
 
             Circle circle = new Circle();
-            Square square = new Square();
+        
             
-            int x = 51, y = 1;
+
+                int x = 51, y = 1;
 
             var botX = 10;
             var botY = 3;
@@ -58,13 +64,14 @@ namespace Lab2
                 Console.Write("Utanför fyrkant");
                 
             }
-            //tA BORT???
-        var shapes = new List<Shape>();
-            shapes.Add(new Circle());
-            shapes.Add(new Square());
-
-            var canvas = new Canvas();
-            canvas.DrawShapes(shapes);
+           
+        //var shapes = new List<Shape>();
+        //    shapes.Add(new Circle());
+        //    shapes.Add(new Square());
+        Shape shape = new Shape();
+        shape.Draw();
+        //    var canvas = new Canvas();
+        //    canvas.DrawShapes(shapes);
         }
     }
 }
